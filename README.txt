@@ -1,16 +1,7 @@
-BlueGene Insurance Services website V1
+BlueGene Insurance Services bilingual website
 
-Preview:
-Open index.html in a browser.
-
-Cloudflare Pages:
-1. Upload these files to a GitHub repository.
-2. Cloudflare > Workers & Pages > Create > Pages > Connect to Git.
-3. Framework preset: None.
-4. Build command: leave blank.
-5. Output directory: /
-6. Deploy.
-7. Add custom domain: www.bluegeneins.com
-
-Important:
-Do not modify the existing Zoho MX, SPF, or DKIM records.
+Upload all files and folders in this package to the ROOT of the GitHub repository.
+Keep these folders: assets/ and docs/.
+Custom domain remains bluegeneins.com via the existing GitHub Pages CNAME/DNS setup.
+Language switch: English / 中文.
+The WeChat QR image is kept unchanged to preserve scan reliability.

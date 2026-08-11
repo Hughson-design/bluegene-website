@@ -5,3 +5,72 @@
   cursor:pointer;padding:5px 4px;text-decoration:none;
 }
 .language-switch a.active{color:#0a3a83;border-bottom:2px solid #0a3a83}
+
+/* v3-6: professional product icons + contact license */
+
+
+
+.pro-icon svg{width:36px;height:36px;display:block;fill:none;stroke:#0a3a83;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
+.pro-icon{background:#fff}
+
+@media(max-width:760px){.pro-icon svg{width:32px;height:32px}}
+
+.contact-license{font-weight:700;color:#0a3476}
+
+
+
+/* v3-8: refined product icon system applied to actual card classes */
+.card .round-icon.pro-icon{
+  width:66px;
+  height:66px;
+  margin:0 auto 16px;
+  border-radius:50%;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  position:relative;
+  background:
+    radial-gradient(circle at 34% 28%, #ffffff 0 42%, #f4f7fb 100%);
+  border:2.5px solid #b8c7df;
+  box-shadow:
+    0 7px 18px rgba(9,52,119,.10),
+    inset 0 0 0 5px #ffffff,
+    inset 0 0 0 6.5px #e4eaf4;
+  color:#083b82;
+  transition:transform .18s ease, box-shadow .18s ease, border-color .18s ease;
+}
+.card .round-icon.pro-icon svg{
+  width:34px;
+  height:34px;
+  display:block;
+  fill:none;
+  stroke:currentColor;
+  stroke-width:2.65;
+  stroke-linecap:round;
+  stroke-linejoin:round;
+  vector-effect:non-scaling-stroke;
+}
+.card .round-icon.pro-icon::after{
+  content:"";
+  position:absolute;
+  width:8px;
+  height:8px;
+  right:3px;
+  bottom:8px;
+  border-radius:50%;
+  background:#b98527;
+  border:2px solid #fff;
+  box-shadow:0 1px 3px rgba(0,0,0,.08);
+}
+.card:hover .round-icon.pro-icon{
+  transform:translateY(-2px) scale(1.025);
+  border-color:#8fa8cf;
+  box-shadow:
+    0 10px 22px rgba(9,52,119,.15),
+    inset 0 0 0 5px #ffffff,
+    inset 0 0 0 6.5px #dfe7f3;
+}
+@media(max-width:760px){
+  .card .round-icon.pro-icon{width:62px;height:62px}
+  .card .round-icon.pro-icon svg{width:32px;height:32px}
+}

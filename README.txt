@@ -1,5 +1,9 @@
-BlueGene Insurance Services website v3-3.
-- Approved v3-2 layout retained
-- BlueGene company logo placed in the center of the WeChat QR code
-- English, Chinese, and Spanish language switching added
-- Existing compressed insurance PDF resources retained
+BlueGene Insurance Services website v3-4
+SEO updates:
+- Separate static English / Chinese / Spanish URLs
+- Localized title and meta descriptions
+- Canonical URLs and hreflang annotations
+- robots.txt and sitemap.xml
+- Organization JSON-LD structured data
+- Open Graph / social preview metadata
+- Existing design, QR code with BlueGene logo, assets and compressed PDF resources retained

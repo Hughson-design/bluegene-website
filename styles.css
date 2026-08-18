@@ -17,60 +17,46 @@
 
 .contact-license{font-weight:700;color:#0a3476}
 
-
-
-/* v3-8: refined product icon system applied to actual card classes */
-.card .round-icon.pro-icon{
-  width:66px;
-  height:66px;
-  margin:0 auto 16px;
+/* v3-7 refined service icons */
+.service-card .service-icon{
+  width:62px;
+  height:62px;
   border-radius:50%;
   display:flex;
   align-items:center;
   justify-content:center;
-  position:relative;
-  background:
-    radial-gradient(circle at 34% 28%, #ffffff 0 42%, #f4f7fb 100%);
-  border:2.5px solid #b8c7df;
-  box-shadow:
-    0 7px 18px rgba(9,52,119,.10),
-    inset 0 0 0 5px #ffffff,
-    inset 0 0 0 6.5px #e4eaf4;
-  color:#083b82;
-  transition:transform .18s ease, box-shadow .18s ease, border-color .18s ease;
+  margin:0 auto 17px;
+  background:linear-gradient(145deg,#ffffff 0%,#f4f7fc 100%);
+  border:2px solid #c8d4e8;
+  box-shadow:0 5px 14px rgba(10,52,118,.08), inset 0 0 0 5px #fff;
+  color:#0a3476;
+  transition:transform .2s ease, box-shadow .2s ease, border-color .2s ease;
 }
-.card .round-icon.pro-icon svg{
-  width:34px;
-  height:34px;
+.service-card .service-icon svg{
+  width:32px;
+  height:32px;
   display:block;
-  fill:none;
   stroke:currentColor;
-  stroke-width:2.65;
+  stroke-width:2.35;
   stroke-linecap:round;
   stroke-linejoin:round;
+  fill:none;
   vector-effect:non-scaling-stroke;
 }
-.card .round-icon.pro-icon::after{
+.service-card:hover .service-icon{
+  transform:translateY(-2px);
+  border-color:#9fb4d4;
+  box-shadow:0 8px 18px rgba(10,52,118,.13), inset 0 0 0 5px #fff;
+}
+.service-card .service-icon::after{
   content:"";
   position:absolute;
-  width:8px;
-  height:8px;
-  right:3px;
-  bottom:8px;
+  width:6px;
+  height:6px;
   border-radius:50%;
-  background:#b98527;
+  background:#bd8121;
+  right:2px;
+  bottom:7px;
   border:2px solid #fff;
-  box-shadow:0 1px 3px rgba(0,0,0,.08);
 }
-.card:hover .round-icon.pro-icon{
-  transform:translateY(-2px) scale(1.025);
-  border-color:#8fa8cf;
-  box-shadow:
-    0 10px 22px rgba(9,52,119,.15),
-    inset 0 0 0 5px #ffffff,
-    inset 0 0 0 6.5px #dfe7f3;
-}
-@media(max-width:760px){
-  .card .round-icon.pro-icon{width:62px;height:62px}
-  .card .round-icon.pro-icon svg{width:32px;height:32px}
-}
+.service-card .service-icon{position:relative}
